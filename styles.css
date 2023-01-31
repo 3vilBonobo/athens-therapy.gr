@@ -7,4 +7,64 @@
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  height: 10rem;
+  padding-inline: 3rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  background-color: rgb(225, 219, 211);
+  position: relative;
+}
+.logo {
+  height: inherit;
+  width: auto;
+  margin-right: 5rem;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+.info {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  border: 2px solid white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.info p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.under-construction {
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  right: 300px;
+}
+
+footer {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(225, 219, 211);
 }
