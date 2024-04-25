@@ -370,7 +370,11 @@ section {
 .faq-section {
   display: flex;
 }
-
+.faq-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .faq-image-wrapper img {
   width: 300px;
   height: auto;
@@ -515,15 +519,22 @@ section {
   .menu.active li {
     margin-bottom: 10px;
   }
+  section {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
   .container {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .about-me-image img {
     padding: 2rem;
   }
   .service-container {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 30px;
+    text-align: justify;
   }
 
   .thumbnail {
@@ -532,10 +543,18 @@ section {
   }
   .contact-section {
     flex-direction: column;
+    padding: 2rem;
   }
 
   .info-wrapper,
   .map-wrapper {
     max-width: 100%;
+  }
+  .left-container,
+  .middle-container,
+  .right-container {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 }
