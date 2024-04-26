@@ -35,7 +35,7 @@ header {
   padding: 20px;
 } */
 button {
-  background-color: #747859;
+  background-color: #2f4f54;
   color: #fff;
   padding: 15px;
   border: none;
@@ -45,7 +45,7 @@ button {
   margin-top: 3rem;
 }
 button:hover {
-  background-color: #4d493c;
+  background-color: #436f75;
 }
 
 section {
@@ -196,7 +196,7 @@ section {
 .hero {
   text-align: center;
   color: white;
-  background-image: url(Hero_Athens_Therapy.jpg);
+  background-image: url(assets/Hero_Athens_Therapy.jpg);
   background-blend-mode: overlay;
   background-color: #686868;
   background-size: cover;
@@ -250,6 +250,7 @@ section {
 .about-me-text {
   text-align: justify;
   margin: 3rem;
+  max-width: 70%;
 }
 
 .about-me-text h2 {
@@ -275,7 +276,9 @@ section {
 .service-container h2 {
   color: #333;
 }
-
+.services-img {
+  display: none;
+}
 .service-container ul {
   list-style-type: none;
   padding: 0;
@@ -305,6 +308,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  padding-inline: 5rem;
 }
 
 .thumbnail {
@@ -378,8 +383,11 @@ section {
   justify-content: center;
 }
 .faq-image-wrapper img {
+  margin-top: 2.5rem;
+  padding-left: 1rem;
   width: 300px;
   height: auto;
+  opacity: 0.9;
 }
 
 .faq-wrapper {
@@ -460,8 +468,8 @@ section {
 
 /* Footer section styles */
 .footer {
-  background-color: #c2dabc;
-  padding: 20px 0;
+  background-color: #f9f9f9;
+  padding: 20px 0 0 0;
   text-align: center;
   width: 100%;
 }
@@ -493,7 +501,9 @@ section {
 }
 
 .attribution {
-  color: #777;
+  background-color: #436f75;
+  padding: 2rem;
+  color: #fff;
   font-size: 14px;
 }
 /* Responsive Styles */
@@ -513,7 +523,7 @@ section {
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #4d493c;
+    background-color: #436f75;
     width: 100%;
     padding: 20px;
   }
@@ -530,6 +540,12 @@ section {
     align-items: center;
     justify-content: center;
   }
+  .about-me-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .about-me-image img {
     padding: 2rem;
   }
@@ -538,10 +554,31 @@ section {
     margin-bottom: 30px;
     text-align: justify;
   }
-
+  .services-img {
+    display: flex;
+  }
+  .services-img img {
+    max-width: 300px;
+    padding-block: 1rem;
+  }
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+  .gallery {
+    padding-inline: 0;
+  }
   .thumbnail {
-    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 50%;
+  }
+  .faq-image-wrapper {
+    display: none;
   }
   .contact-section {
     flex-direction: column;
